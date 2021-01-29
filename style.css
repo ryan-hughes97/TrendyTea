@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Girassol&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+:root {
+  --primary-color: #9fae97;
+  --secondary-color: #e3ded0;
+  --background-color: #f7f4f2;
+}
+
+body {
+  background: linear-gradient(
+    to right bottom,
+    var(--background-color),
+    var(--primary-color)
+  );
+  font-family: 'Poppins', sans-serif;
+  /* height: 100vh; */
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+}
+
+nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  z-index: 5;
+}
+
+nav .logo a {
+  font-family: 'Lobster', cursive;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+nav .logo a:hover {
+  cursor: pointer;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  position: relative;
+}
+
+main .showcase-text {
+  font-family: 'Poppins', sans-serif;
+  margin-left: 1rem;
+}
+
+main .showcase-text button {
+  background: var(--primary-color);
+  color: var(--background-color);
+  border: none;
+  border-radius: 10px;
+  padding: 0.5rem;
+  width: 80%;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+
+main .showcase-text button:hover {
+  opacity: 0.8;
+}
+
+main img {
+  margin-right: 1rem;
+}
+
+.box-items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  margin-bottom: 1rem;
+  /* justify-content: center;
+  max-width: 800px;
+  align-items: center;
+  margin: auto; */
+}
+
+.box-item {
+  /* width: 250px; */
+  background: var(--background-color);
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.box-item button {
+  background: var(--secondary-color);
+  width: 100%;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 10px;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.box-item button:hover {
+  opacity: 0.8;
+}
+
+.main-article,
+.types,
+.recommended {
+  background: var(--background-color);
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+footer {
+  background: var(--primary-color);
+  text-align: center;
+  padding: 1rem;
+}
